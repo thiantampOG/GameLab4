@@ -1,67 +1,22 @@
 [gd_scene format=3 uid="uid://b48s52q3f64kl"]
 
 [ext_resource type="PackedScene" uid="uid://d27bcsmx82vfa" path="res://Scenes/Actors/enemy.tscn" id="1_a4af2"]
-[ext_resource type="Texture2D" uid="uid://bgo8qsi7vlfr1" path="res://Assets/Spritesheet/Mushroom-Run.png" id="2_2oid6"]
 [ext_resource type="Script" uid="uid://bx5lotsye1r4s" path="res://Scenes/Actors/monster_small.gd" id="2_tyn28"]
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_na032"]
-atlas = ExtResource("2_2oid6")
-region = Rect2(0, 22, 80, 42)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_cy5wp"]
-atlas = ExtResource("2_2oid6")
-region = Rect2(80, 22, 80, 42)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_aldu0"]
-atlas = ExtResource("2_2oid6")
-region = Rect2(160, 22, 80, 42)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_5jiam"]
-atlas = ExtResource("2_2oid6")
-region = Rect2(240, 22, 80, 42)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_se70e"]
-atlas = ExtResource("2_2oid6")
-region = Rect2(320, 22, 80, 42)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_fblqy"]
-atlas = ExtResource("2_2oid6")
-region = Rect2(400, 22, 80, 42)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_k3ucb"]
-atlas = ExtResource("2_2oid6")
-region = Rect2(480, 22, 80, 42)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_x2ha1"]
-atlas = ExtResource("2_2oid6")
-region = Rect2(560, 22, 80, 42)
+[ext_resource type="Texture2D" uid="uid://btggvn2d401mw" path="res://Assets/thanwa/ตำรวจ1-removebg-preview.png" id="3_sxrqx"]
+[ext_resource type="Texture2D" uid="uid://defuajr2rhn0i" path="res://Assets/thanwa/ตำรวจ2-removebg-preview.png" id="4_ej0hy"]
+[ext_resource type="Texture2D" uid="uid://wa4y205sc4ed" path="res://Assets/thanwa/ตำรวจ3-removebg-preview.png" id="5_8jrfl"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_l7ctk"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_na032")
+"texture": ExtResource("3_sxrqx")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_cy5wp")
+"texture": ExtResource("4_ej0hy")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_aldu0")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_5jiam")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_se70e")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_fblqy")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_k3ucb")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_x2ha1")
+"texture": ExtResource("5_8jrfl")
 }],
 "loop": 1,
 "name": &"mushroom",
@@ -80,7 +35,8 @@ position = Vector2(0, -33)
 scale = Vector2(1.5, 1.5)
 
 [node name="AnimateSprite" type="AnimatedSprite2D" parent="Sprite" parent_id_path=PackedInt32Array(1445111960) index="0" unique_id=87960724]
-position = Vector2(0, -42)
-scale = Vector2(2, 2)
+position = Vector2(1, -36)
+scale = Vector2(0.12842262, 0.12842262)
 sprite_frames = SubResource("SpriteFrames_l7ctk")
 animation = &"mushroom"
+flip_h = true

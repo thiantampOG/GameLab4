@@ -1,6 +1,10 @@
 [gd_scene format=3 uid="uid://b6tvaxw54wsq0"]
 
 [ext_resource type="Script" uid="uid://tkynu7pd01lh" path="res://Scenes/Levels/menu.gd" id="1_hq2ph"]
+[ext_resource type="Texture2D" uid="uid://b0x8sjno2omlc" path="res://Assets/thanwa/cp_logo-removebg-preview.png" id="2_rwfgf"]
+[ext_resource type="Texture2D" uid="uid://dp37b006butta" path="res://Assets/thanwa/ต้นมะละกอ-removebg-preview.png" id="3_dsa84"]
+[ext_resource type="Texture2D" uid="uid://bilyqmbqkunl2" path="res://Assets/thanwa/รถแต่ง-removebg-preview.png" id="4_00qkb"]
+[ext_resource type="Texture2D" uid="uid://dbcg4pa6wg1hv" path="res://Assets/thanwa/กระบะ-removebg-preview.png" id="5_ieqbc"]
 
 [node name="Node2D" type="Node2D" unique_id=827773846]
 script = ExtResource("1_hq2ph")
@@ -60,7 +64,71 @@ offset_bottom = 435.0
 grow_horizontal = 2
 text = "Credit"
 
+[node name="btnExit" type="Button" parent="UI" unique_id=2018832717]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -76.5
+offset_top = 447.0
+offset_right = 78.5
+offset_bottom = 511.0
+grow_horizontal = 2
+text = "Exit"
+
+[node name="Label" type="Label" parent="UI" unique_id=230384633]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 248.0
+offset_top = 88.0
+offset_right = 495.0
+offset_bottom = 111.0
+scale = Vector2(2.849263, 2.5412333)
+text = "Game Lab 4 : ผจญภัยแดนปลาแดก"
+
+[node name="ColorRect" type="ColorRect" parent="UI" unique_id=798878869]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(28.839998, 2.2799997)
+color = Color(0.63866097, 0.6386611, 0.63866085, 1)
+
+[node name="ColorRect2" type="ColorRect" parent="UI" unique_id=1845159275]
+layout_mode = 0
+offset_top = 552.0
+offset_right = 40.0
+offset_bottom = 592.0
+scale = Vector2(28.839998, 2.2799997)
+color = Color(0.15300488, 0.45062286, 0.34382212, 1)
+
+[node name="CpLogoRemovebgPreview" type="Sprite2D" parent="UI" unique_id=1969133734]
+position = Vector2(136, 48)
+scale = Vector2(0.5672429, 0.5672429)
+texture = ExtResource("2_rwfgf")
+
+[node name="ต้นมะละกอRemovebgPreview" type="Sprite2D" parent="UI" unique_id=1731056700]
+position = Vector2(72, 456.00006)
+scale = Vector2(0.596, 0.596)
+texture = ExtResource("3_dsa84")
+
+[node name="รถแต่งRemovebgPreview" type="Sprite2D" parent="UI" unique_id=2118912686]
+position = Vector2(184, 552)
+scale = Vector2(0.41523376, 0.41523376)
+texture = ExtResource("4_00qkb")
+
+[node name="ต้นมะละกอRemovebgPreview2" type="Sprite2D" parent="UI" unique_id=1052353725]
+position = Vector2(1000, 376)
+scale = Vector2(0.87841105, 0.87841105)
+texture = ExtResource("3_dsa84")
+
+[node name="กระบะRemovebgPreview" type="Sprite2D" parent="UI" unique_id=1332486613]
+position = Vector2(864, 528)
+scale = Vector2(0.64529896, 0.64529896)
+texture = ExtResource("5_ieqbc")
+flip_h = true
+
 [connection signal="pressed" from="UI/btnStart" to="." method="_on_btn_start_pressed"]
 [connection signal="pressed" from="UI/btnContinue" to="." method="_on_btn_continue_pressed"]
 [connection signal="pressed" from="UI/btnOption" to="." method="_on_btn_option_pressed"]
 [connection signal="pressed" from="UI/btnCredit" to="." method="_on_btn_credit_pressed"]
+[connection signal="pressed" from="UI/btnExit" to="." method="_on_btn_exit_pressed"]

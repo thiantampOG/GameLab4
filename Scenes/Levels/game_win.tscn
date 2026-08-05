@@ -2,14 +2,16 @@
 
 [ext_resource type="Theme" uid="uid://d3eng5cvycmjf" path="res://Scenes/Prefabs/theme.tres" id="1_5l1gm"]
 [ext_resource type="PackedScene" uid="uid://puc4l62gx6et" path="res://Scenes/Prefabs/button_exit.tscn" id="2_81byk"]
+[ext_resource type="Texture2D" uid="uid://cnwsqvvp1j247" path="res://Assets/thanwa/ChatGPT_Image_Aug_5__2026__09_12_10_PM-removebg-preview.png" id="3_5l1gm"]
 
 [node name="GameOver" type="Node2D" unique_id=826370530]
 
 [node name="Title" type="Label" parent="." unique_id=1965507633]
-offset_left = 438.0
-offset_top = 225.0
-offset_right = 742.0
-offset_bottom = 269.0
+offset_left = 329.0
+offset_top = 201.0
+offset_right = 633.0
+offset_bottom = 245.0
+scale = Vector2(1.6389921, 1.6389921)
 theme = ExtResource("1_5l1gm")
 theme_override_colors/font_color = Color(0.36862746, 0.9137255, 0.1882353, 1)
 theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
@@ -33,3 +35,12 @@ offset_right = 723.0
 offset_bottom = 413.0
 shortcut = null
 text = "Play Again"
+
+[node name="ChatGptImageAug52026091210PmRemovebgPreview" type="Sprite2D" parent="." unique_id=148119266]
+position = Vector2(230, 376)
+texture = ExtResource("3_5l1gm")
+
+[node name="ChatGptImageAug52026091210PmRemovebgPreview2" type="Sprite2D" parent="." unique_id=1231907766]
+position = Vector2(921, 373)
+texture = ExtResource("3_5l1gm")
+flip_h = true

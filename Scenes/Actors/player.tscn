@@ -7,8 +7,8 @@
 [ext_resource type="Texture2D" uid="uid://dia1dp34sme5l" path="res://Assets/Spritesheet/light_w.png" id="4_wn7ci"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_n4sts"]
-radius = 20.985498
-height = 69.99915
+radius = 19.287785
+height = 75.44819
 
 [sub_resource type="Curve" id="Curve_m2jh0"]
 _data = [Vector2(0, 0), 0.0, 0.0, 0, 0, Vector2(0.246032, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
@@ -28,7 +28,8 @@ script = ExtResource("1_mqoqv")
 bullet_scene = ExtResource("2_4fuvf")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1840880435]
-position = Vector2(2.08165e-12, -33)
+position = Vector2(-2.0162082, -37.99914)
+scale = Vector2(1.1398664, 1.1398664)
 shape = SubResource("CapsuleShape2D_n4sts")
 
 [node name="ParticleTrails" type="CPUParticles2D" parent="." unique_id=1927645372]
@@ -74,8 +75,8 @@ position = Vector2(2.08165e-12, -48)
 collision_mask = 13
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Collision" unique_id=69876643]
-position = Vector2(-2.0268738, -8.998505)
-scale = Vector2(1.0000011, 1.0000011)
+position = Vector2(-2.0268743, -8.998505)
+scale = Vector2(1.0000013, 1.0000013)
 shape = SubResource("RectangleShape2D_tvbjh")
 
 [node name="LightW" type="Sprite2D" parent="." unique_id=900370792]
@@ -86,6 +87,7 @@ texture = ExtResource("4_wn7ci")
 
 [node name="student" parent="." unique_id=1717188345 instance=ExtResource("4_pdd2n")]
 position = Vector2(-0.9982939, 4.0004263)
+scale = Vector2(0.82243526, 0.82243526)
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1467812523]
 limit_smoothed = true

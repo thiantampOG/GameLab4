@@ -1,4 +1,4 @@
-extends Area2D
+extends Node2D
 
 # You can change these to your likings
 @export var amplitude := 4
