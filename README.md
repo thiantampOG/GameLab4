@@ -1,3 +1,20 @@
+# Game Lab 4: 2D PlatformervGame
+by นายเธียรธรรม ประทุมรัตน์
+**Game Story** 
+เอ็มออนิวผจญภัย หาทางกลับบ้านไปหาเมีย และหลบหนีจากตำตาจ และกินเบียร์ระหว่างทาง
+
+**Game Style**
+วิ่งผ่านด่าน กระโดหลบกับดัก 
+
+## วิดีโอตัวอย่าง 
+
+## รูปประกอบเดโม่ 
+
+<img src="docs/demo1.jpg" width="300">
+<img src="docs/demo2.jpg" width="300">
+
+## ตัวอย่างเกม https://thiantampog.github.io/GameLab4/
+
 # 2D Platformer Starter Kit
 
 This starter kit provides all the essential mechanics needed to build a complete 2D platformer game in Godot 4.7. It is designed as a hands-on learning resource for students taking the **Computer Game Development** course at the **College of Computing, Khon Kaen University**.
